@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4if-Qq-fv4">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MyViewThree-->
+        <scene sceneID="zuP-aT-9OV">
+            <objects>
+                <viewController title="MyViewThree" id="4if-Qq-fv4" customClass="MyViewThreeViewController" customModule="ExercicioTransicaoTelas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ecz-TI-QfR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJh-NQ-y7Q">
+                                <rect key="frame" x="149.5" y="144" width="115" height="30"/>
+                                <state key="normal" title="ViewThreeModal"/>
+                                <connections>
+                                    <action selector="actionViewThreeModal" destination="4if-Qq-fv4" eventType="touchUpInside" id="Stn-iT-rda"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5r-TY-Ia1">
+                                <rect key="frame" x="145" y="214" width="124" height="30"/>
+                                <state key="normal" title="ViewThreePushed"/>
+                                <connections>
+                                    <action selector="actionViewThreePushed" destination="4if-Qq-fv4" eventType="touchUpInside" id="qGC-sg-Xhb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="a5r-TY-Ia1" firstAttribute="centerX" secondItem="Ecz-TI-QfR" secondAttribute="centerX" id="D07-34-Th0"/>
+                            <constraint firstItem="jJh-NQ-y7Q" firstAttribute="top" secondItem="oZ4-Lp-arZ" secondAttribute="top" constant="100" id="TjU-ND-yhL"/>
+                            <constraint firstItem="jJh-NQ-y7Q" firstAttribute="centerX" secondItem="Ecz-TI-QfR" secondAttribute="centerX" id="d3f-Jf-jPn"/>
+                            <constraint firstItem="a5r-TY-Ia1" firstAttribute="top" secondItem="jJh-NQ-y7Q" secondAttribute="bottom" constant="40" id="zXR-lg-Gx0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oZ4-Lp-arZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j39-e4-IOC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="65" y="130"/>
+        </scene>
+    </scenes>
+</document>

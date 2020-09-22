@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xZs-6x-7s6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MyViewTwo-->
+        <scene sceneID="3iZ-bq-NTu">
+            <objects>
+                <viewController title="MyViewTwo" id="xZs-6x-7s6" customClass="MyViewTwoViewController" customModule="ExercicioTransicaoTelas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yJI-8s-ltm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSj-J0-UHg">
+                                <rect key="frame" x="145.5" y="144" width="123" height="30"/>
+                                <state key="normal" title="MyViewTwoModal"/>
+                                <connections>
+                                    <action selector="actionViewTwoModal" destination="xZs-6x-7s6" eventType="touchUpInside" id="w0n-aU-27l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8du-wx-q5f">
+                                <rect key="frame" x="140.5" y="214" width="133" height="30"/>
+                                <state key="normal" title="MyViewTwoPushed"/>
+                                <connections>
+                                    <action selector="actionViewTwoPushed" destination="xZs-6x-7s6" eventType="touchUpInside" id="DYn-ML-B2U"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gSj-J0-UHg" firstAttribute="centerX" secondItem="yJI-8s-ltm" secondAttribute="centerX" id="7B8-2k-Sjx"/>
+                            <constraint firstItem="8du-wx-q5f" firstAttribute="centerX" secondItem="yJI-8s-ltm" secondAttribute="centerX" id="DmA-bE-8Mb"/>
+                            <constraint firstItem="8du-wx-q5f" firstAttribute="top" secondItem="gSj-J0-UHg" secondAttribute="bottom" constant="40" id="LE6-HG-TCu"/>
+                            <constraint firstItem="gSj-J0-UHg" firstAttribute="top" secondItem="7ul-76-tQm" secondAttribute="top" constant="100" id="jEc-Af-nhf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7ul-76-tQm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mcz-1I-oci" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="65" y="130"/>
+        </scene>
+    </scenes>
+</document>
